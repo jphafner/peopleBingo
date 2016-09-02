@@ -25,9 +25,12 @@ done
 
 echo ${ORDER}
 
+## https://github.com/hellerbarde/stapler
+## Usage: stapler [options] mode input.pdf ... [output.pdf]
 echo "stapler cat ${n}-joined.pdf ${ORDER} temp.pdf"
       stapler cat ${n}-joined.pdf ${ORDER} temp.pdf
 
+## from pdfjam package
 echo "pdfnup --nup 1x2 --papersize '{11in,8.5in}' --frame true temp.pdf"
       pdfnup --nup 1x2 --papersize '{11in,8.5in}' --frame true temp.pdf
 
